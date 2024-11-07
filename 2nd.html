@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+</head>
+<body>
+    
+    <h2>Select a Subscription Plan</h2>
+    <button onclick="selectPlan('Basic', '499', '1 month')">Basic - ₹499/month</button>
+    <button onclick="selectPlan('Standard', '899', '6 months')">Standard - ₹899/6 months</button>
+    <button onclick="selectPlan('Premium', '1499', '12 months')">Premium - ₹1499/year</button>
+
+    <script>
+        // 2. Hotstar: Subscription Plan Selection (Switch Case & Prompt)
+        function selectPlan(planName, price, duration) {
+            alert(`You selected the ${planName} Plan.\nPrice: ₹${price}\nDuration: ${duration}`);
+        }
+    </script>
+
+</body>
+</html>

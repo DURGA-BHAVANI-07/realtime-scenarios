@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Quality Selection</title>
+</head>
+<body>
+
+    <h2>Start Video</h2>
+    <button onclick="chooseVideoQuality()">Play Video</button>
+
+    <script>
+        function chooseVideoQuality() {
+            const quality = prompt("Select video quality: (Options: 720p, 1080p, 4K)");
+
+            if (quality === "720p" || quality === "1080p" || quality === "4K") {
+                alert(`You selected ${quality} quality. Starting the video...`);
+            } else {
+                alert("Invalid input. Please choose between 720p, 1080p, or 4K.");
+            }
+        }
+    </script>
+
+</body>
+</html>

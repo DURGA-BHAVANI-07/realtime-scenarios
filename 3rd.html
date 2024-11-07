@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Booking Confirmation</title>
+</head>
+<body>
+
+    <h2>Book Your Ride</h2>
+    <button onclick="bookRide()">Book Ride</button>
+
+    <script>
+        // 3. Uber (Ride Booking Experience)
+
+        function bookRide() {
+            alert("Booking your ride...");
+            setTimeout(() => {
+                let userConfirmed = confirm("Your ride is ready! Do you confirm the booking?");
+                
+                if (userConfirmed) {
+                    alert("Ride confirmed! Your driver is on the way.");
+                } else {
+                    alert("Ride booking canceled.");
+                }
+            }, 3000); 
+        }
+    </script>
+
+</body>
+</html>
